@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite2" verbose="1">
+    <test name="Nopackage">
+        <classes>
+            <class name="com_phonebook_tests.HomePageTests"/>
+            <class name="com_phonebook_tests.LoginTests">
+                <methods>
+                    <exclude name=".*Negative.*"></exclude>
+                </methods>
+            </class>
+            <class name="com_phonebook_tests.AddNewContactTests"/>
+            <class name="com_phonebook_tests.RemoveContactTests"/>
+        </classes>
+    </test>
+
+
+</suite>
