@@ -2,7 +2,10 @@ package com_phonebook_tests;
 
 import com_phonebook.models.Contact;
 import com_phonebook.models.User;
+import com_phonebook.utils.ContactData;
 import com_phonebook.utils.DataProviders;
+import com_phonebook.utils.UserData;
+import org.checkerframework.checker.units.qual.C;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -23,8 +26,8 @@ public class AddNewContactTests extends TestBase {
 
         }
         app.getUser().clickOnLoginLink();
-        app.getUser().fillLoginRegisterForm(new User().setEmail("jorik@gm.com")
-                .setPassword("Jorikvart1234$"));
+        app.getUser().fillLoginRegisterForm(new User().setEmail(UserData.EMAIL)
+                .setPassword(UserData.PASSWORD));
         app.getUser().clickOnLoginButton();
     }
 
@@ -32,14 +35,14 @@ public class AddNewContactTests extends TestBase {
     public void addNewContactPositiveTest() {
         app.getContact().clickOnAddLink();
         app.getContact().fillContactForm(new Contact()
-                .setName("Jorik")
-                .setLastname("Patrik")
-                .setPhone("1234567890")
-                .setEmail("jorik@gm.com")
-                .setAddress("Berlin")
-                .setDescription("fussball"));
+                .setName(ContactData.NAME)
+                .setLastname(ContactData.LAST_NAME)
+                .setPhone(ContactData.PHONE)
+                .setEmail(ContactData.EMAIL)
+                .setAddress(ContactData.ADDRESS)
+                .setDescription(ContactData.DESC));
         app.getContact().clickOnSaveButton();
-        Assert.assertTrue(app.getContact().isContactCreated("Jorik"));
+        Assert.assertTrue(app.getContact().isContactCreated(ContactData.NAME));
 
     }
 
