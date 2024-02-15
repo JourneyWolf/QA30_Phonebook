@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com_phonebook_tests.AddNewContactTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2024-02-15T18:09:15" hostname="DESKTOP-IDGOR8Q" time="112.914">
+  <properties/>
+  <testcase name="addNewContactPositiveTest" classname="com_phonebook_tests.AddNewContactTests" time="2.748"/>
+  <testcase name="addNewContactPositiveTestFromDataProvider[0](Alex1, Zweig, 1234567890, zweig@gm.com, Berlin, goalkeeper)" classname="com_phonebook_tests.AddNewContactTests" time="2.142"/>
+  <testcase name="addNewContactPositiveTestFromDataProvider[1](Alex2, Zweig, 1234567899, zweig@gm.com, Berlin, goalkeeper)" classname="com_phonebook_tests.AddNewContactTests" time="2.075"/>
+  <testcase name="addNewContactPositiveTestFromDataProvider[2](Alex3, Zweig, 1234567898, zweig@gm.com, Berlin, goalkeeper)" classname="com_phonebook_tests.AddNewContactTests" time="2.492"/>
+  <testcase name="addNewContactPositiveTestFromDataProviderWithCSV[0](Contact{name='Alex', phone='1234567890'})" classname="com_phonebook_tests.AddNewContactTests" time="2.164"/>
+  <testcase name="addNewContactPositiveTestFromDataProviderWithCSV[1](Contact{name='Alex1', phone='1234567891'})" classname="com_phonebook_tests.AddNewContactTests" time="2.07"/>
+  <testcase name="addNewContactPositiveTestFromDataProviderWithCSV[2](Contact{name='Alex2', phone='1234567892'})" classname="com_phonebook_tests.AddNewContactTests" time="2.058"/>
+  <testcase name="addNewContactPositiveTestFromDataProviderWithCSV[3](Contact{name='Alex3', phone='1234567893'})" classname="com_phonebook_tests.AddNewContactTests" time="1.987"/>
+  <testcase name="addNewContactPositiveTestFromDataProviderWithCSV[4](Contact{name='Alex4', phone='1234567894'})" classname="com_phonebook_tests.AddNewContactTests" time="2.07"/>
+  <system-out><![CDATA[19:09:14.090 [Test worker] INFO  com_phonebook_tests.TestBase -- Start test addNewContactPositiveTest with data: []
+19:09:18.350 [Test worker] INFO  com_phonebook_tests.TestBase -- PASSED: addNewContactPositiveTest
+19:09:18.361 [Test worker] INFO  com_phonebook_tests.TestBase -- Start test addNewContactPositiveTestFromDataProvider with data: [Alex1, Zweig, 1234567890, zweig@gm.com, Berlin, goalkeeper]
+19:09:32.178 [Test worker] INFO  com_phonebook_tests.TestBase -- PASSED: addNewContactPositiveTestFromDataProvider
+19:09:32.180 [Test worker] INFO  com_phonebook_tests.TestBase -- Start test addNewContactPositiveTestFromDataProvider with data: [Alex2, Zweig, 1234567899, zweig@gm.com, Berlin, goalkeeper]
+19:09:45.867 [Test worker] INFO  com_phonebook_tests.TestBase -- PASSED: addNewContactPositiveTestFromDataProvider
+19:09:45.868 [Test worker] INFO  com_phonebook_tests.TestBase -- Start test addNewContactPositiveTestFromDataProvider with data: [Alex3, Zweig, 1234567898, zweig@gm.com, Berlin, goalkeeper]
+19:09:59.976 [Test worker] INFO  com_phonebook_tests.TestBase -- PASSED: addNewContactPositiveTestFromDataProvider
+19:09:59.978 [Test worker] INFO  com_phonebook_tests.TestBase -- Start test addNewContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Alex', phone='1234567890'}]
+19:10:13.786 [Test worker] INFO  com_phonebook_tests.TestBase -- PASSED: addNewContactPositiveTestFromDataProviderWithCSV
+19:10:13.789 [Test worker] INFO  com_phonebook_tests.TestBase -- Start test addNewContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Alex1', phone='1234567891'}]
+19:10:27.492 [Test worker] INFO  com_phonebook_tests.TestBase -- PASSED: addNewContactPositiveTestFromDataProviderWithCSV
+19:10:27.494 [Test worker] INFO  com_phonebook_tests.TestBase -- Start test addNewContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Alex2', phone='1234567892'}]
+19:10:41.225 [Test worker] INFO  com_phonebook_tests.TestBase -- PASSED: addNewContactPositiveTestFromDataProviderWithCSV
+19:10:41.228 [Test worker] INFO  com_phonebook_tests.TestBase -- Start test addNewContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Alex3', phone='1234567893'}]
+19:10:54.833 [Test worker] INFO  com_phonebook_tests.TestBase -- PASSED: addNewContactPositiveTestFromDataProviderWithCSV
+19:10:54.837 [Test worker] INFO  com_phonebook_tests.TestBase -- Start test addNewContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Alex4', phone='1234567894'}]
+19:11:08.505 [Test worker] INFO  com_phonebook_tests.TestBase -- PASSED: addNewContactPositiveTestFromDataProviderWithCSV
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
